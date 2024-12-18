@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import  { useContext, useState } from "react";
 import { CgProfile } from "react-icons/cg";
 import {
   FaArrowAltCircleLeft,
@@ -10,10 +10,10 @@ import { IoHome } from "react-icons/io5";
 import { RiLogoutBoxLine } from "react-icons/ri";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Link, useNavigate } from "react-router-dom";
-import profile from "../../assets/images/profile.png";
+
 import { AuthContext } from "../Context/AuthContext";
 export default function SideBar() {
-   let {userData}=useContext(AuthContext)
+   let {userData}:any=useContext(AuthContext)
   let [collapsed, setIsCollapsed] = useState(false);
   let navigate=useNavigate()
 

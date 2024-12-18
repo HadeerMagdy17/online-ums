@@ -3,11 +3,11 @@ import { useContext } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import { AuthContext } from './../Context/AuthContext';
 export default function NavBar() {
 
-  let {userData}=useContext(AuthContext)
+  let {userData}:any=useContext(AuthContext)
   return (
     <>
         <Navbar expand="lg" className="bg-body-tertiary">

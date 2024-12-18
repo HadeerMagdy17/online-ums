@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm} from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
