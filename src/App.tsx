@@ -11,6 +11,8 @@ import Home from './Components/Home/Home'
 import UsersList from './Components/UsersList/UsersList'
 import Adduser from './Components/Adduser/Adduser'
 import Profile from './Components/Profile/Profile'
+import { ToastContainer} from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   let routes=createBrowserRouter([{
@@ -37,6 +39,7 @@ function App() {
 
   return (
     <>
+      <ToastContainer />
     <RouterProvider router={routes}></RouterProvider>
     
     </>
